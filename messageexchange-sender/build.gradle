@@ -1,0 +1,6 @@
+apply plugin: 'org.springframework.boot'
+
+jar {
+	baseName = 'messageexchange-sender'
+	version = '0.0.1-SNAPSHOT'
+}

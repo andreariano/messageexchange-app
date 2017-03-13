@@ -1,0 +1,10 @@
+apply plugin: 'org.springframework.boot'
+
+jar {
+	baseName = 'messageexchange-receiver'
+	version = '0.0.1-SNAPSHOT'
+}
+
+dependencies {
+	compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.0.7'
+}

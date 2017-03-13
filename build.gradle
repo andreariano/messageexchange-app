@@ -1,0 +1,30 @@
+apply plugin: 'java'
+
+subprojects {
+	buildscript {
+		ext {
+			springBootVersion = '1.5.2.RELEASE'
+		}
+		repositories {
+			mavenCentral()
+		}
+		dependencies {
+			classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		}
+	}
+	
+	apply plugin: 'java'
+	apply plugin: 'eclipse'
+
+	sourceCompatibility = 1.8
+
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+		compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka', version: '1.2.6.RELEASE'
+		compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka-server', version: '1.2.6.RELEASE'
+		compile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.5.2.RELEASE'
+	}
+}

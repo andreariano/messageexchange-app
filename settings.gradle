@@ -1,0 +1,6 @@
+include 'messageexchange-server'
+include 'messageexchange-sender'
+include 'messageexchange-receiver'
+include 'messageexchange-api'
+
+rootProject.name = 'messageexchange'
